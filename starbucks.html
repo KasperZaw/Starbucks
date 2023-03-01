@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <link rel="stylesheet" href="starbucks.css">
+     <meta charset="UTF-8">
+     
+      <title>Starbucks Website Landing Page</title>
+    </head>
+    
+    <body>
+    <section>
+        <div class="cirlce"></div>
+        <header>
+            <a href="#" class="logo"><img src="logo.png"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+        </header>
+        
+        <div class="content" >
+ <div class="textBox">
+<h2>It's not just Coffee<br>It's <span class="startbucks-text"> Starbucks</span></h2>
+<p>Frappuccino® Blended Beverage is an inherent part of Starbucks' summer offer!
+    <br>Banana Split Frappucino will delight you with notes of caramelized banana,
+    <br>espresso, whipped cream and mocha sauce.
+    <br> Passionfruit Raspberry Frappucino is an exotic journey through the flavors of passion fruit, <br>raspberry and vanilla. </p>
+    <a class="learnmore" href="#">Learn More</a>
+ </div>
+        </div>
+        <div class="imgBox">
+            <img src="img1.png" altstarbucks="starbucks" class="starbucks-img" ><a href="#"></a>
+        </div>
+        <ul class="thumb">
+            <li><img src="thumb1.png" onclick="imgSlider('img1.png'); changeCircleColor('#017143')"></li>
+            <li><img src="thumb2.png" onclick="imgSlider('img2.png'); changeCircleColor('#eb7495')"></li>
+            <li><img src="thumb3.png" onclick="imgSlider('img3.png'); changeCircleColor('#d752b1')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png"></a></li>
+            <li><a href="#"><img src="instagram.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+
+        </ul>
+    
+    </section>
+<script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.starbucks-img').src = anything;
+    }
+    function changeCircleColor(color){
+        const cirlce = document.querySelector('.cirlce');
+        cirlce.style.background = color
+    }
+</script>
+    </body>
+    </html>

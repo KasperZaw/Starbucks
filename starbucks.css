@@ -1,0 +1,184 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+body{
+    overflow: hidden;
+    background-size: 100%;
+    
+}
+section
+{
+    position: relative;
+    width: 100%;
+    min-height:  100vh; ;
+    display: flex;
+    padding: 100px;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(241, 232, 224);
+    
+
+}
+header{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+header .logo{
+    position: relative;
+    max-width: 80px;
+    transition: 0.5s;
+
+}
+.logo:hover{
+    transform: scale(1.15);
+}
+header ul
+{
+    position: relative;
+    display: flex;
+}
+header ul li
+{
+    list-style: none;
+}
+header ul li a
+{
+    display: inline-block;
+    color: #333;
+    font-weight: 500;
+    text-decoration: none;
+    justify-content: space-between;
+    margin-left: 40px;
+    cursor: pointer;
+    padding: 15px;
+    transition: 0.3s;
+    border-radius: 40px;
+}
+header ul li a:hover{
+    background-color: #017143;
+    color: white;
+    transform: scale(1.15);
+   
+
+}
+.content
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.textBox h2
+{
+ font-size: 4em;
+ margin-top: 40px;
+}
+.startbucks-text{
+    color: rgb(10, 100, 10);
+    font-weight: 1000;
+    font-size: 1.4em;
+    text-indent: 40px;
+    
+}
+.learnmore
+{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 20px;
+    background-color: #017143;
+    border-radius: 40px;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.learnmore:hover{
+    transform: scale(1.1);
+    
+}
+.imgBox
+{
+    max-width: 340px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+
+  
+
+.starbucks-img{
+    max-width: 340px;
+    margin: 20px;
+    margin-right: 50px;
+    z-index: 1;
+}
+
+   
+.thumb{
+    position: absolute;
+    left:50% ;
+    bottom: 10%;
+    transform: translateX(-50%);
+    display: flex;
+
+}
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 25px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.thumb li:hover{
+    transform: translateY(-15%);
+}
+
+
+.thumb li img{
+    max-width: 60px;
+}
+.sci{
+    position:absolute;
+    top:50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sci li{
+    list-style: none;
+
+}
+.sci li a{
+    display: inline-block;
+    margin: 10px 0;
+    transform: scale(0.6);
+}
+.cirlce{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #017143;
+    clip-path: circle(600px at right 800px);
+
+}
